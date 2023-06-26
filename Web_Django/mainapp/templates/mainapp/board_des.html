@@ -63,7 +63,9 @@
                     </dl>
                     <dl>
                         <div class="bt_wrap">
+                            {% if request.user == community.username %}
                             <a href="{% url 'mainapp:com_update' community.com_num %}">수정</a>
+                            {% endif %}
                         </div>
                     </dl>
                 </div>
